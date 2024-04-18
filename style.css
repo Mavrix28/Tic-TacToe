@@ -1,0 +1,104 @@
+
+
+body{
+    background-color: 		#fbf1f9;
+    text-align: center;
+    align-items: center;
+}
+
+.container{
+    height: 97vh;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border: 2px solid black;
+}
+
+.game{
+    height: 60vmin;
+    width: 58vmin;
+    position: absolute;
+    top: 23%;
+    left: 35%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px; 
+    padding: 1rem 1rem;
+   
+}
+
+.box{
+    height: 18vmin;
+    width: 18vmin;
+    border: 1px solid black;
+    font-size: 5rem;
+    color: #000;
+    box-shadow:inset 10px 10px 10px -1px rgba(219, 223, 219, 0.828),
+    inset -10px -10px 10px -1px rgba(210, 198, 198, 0.789);
+    transition: all 0.7s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    transform: translate3d(2px,3px 4px);
+}
+
+.box:hover{
+    border: none;
+  
+    box-shadow:inset 10px 10px 10px -1px rgba(219, 223, 219, 0.828),
+    inset -10px -10px 10px -1px rgba(210, 198, 198, 0.789);
+    transition: all 0.7s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    transform: translate3d(2px,3px 4px);
+}
+
+#reset-btn{
+    position: absolute;
+    bottom: 20px;
+    left: 48%;
+    font-weight: 100;
+    color: black;
+    font-size: 30px;
+    border-radius: 10px;
+    /* box-shadow:inset 10px 10px 10px -1px rgba(73, 87, 73, 0.828),
+               inset -10px -10px 10px -1px rgba(145, 124, 124, 0.789); */
+    border: none;
+    cursor:pointer;
+    padding: 12px 10px;
+  
+}
+
+#reset-btn:hover{
+    font-size: 2rem;
+    font-weight: 300;
+  
+}
+
+.msg-container{
+    height: 3rem;
+    width: 45%;
+    padding: 2rem 1rem;
+    position: relative;
+     left: 32%;
+    
+  }
+
+#msg{
+    font-size: 3rem;
+    font-weight: bold;
+}
+.msg-container p{
+    position: absolute;
+    top: 5px;
+    margin-top: 5px;
+  }
+
+  #newGame{
+    position: absolute;
+    bottom: 3px;
+  }
+
+
+
+
+
+.hide{
+    display: none;
+}
